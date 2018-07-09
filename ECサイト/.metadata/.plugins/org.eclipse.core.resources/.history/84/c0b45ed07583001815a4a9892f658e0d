@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<action name="LoginAction"
+class="com.internousdev.template.action.LoginAction"
+method="execute">
+
+	<result name="success">buyItem.jsp</result>
+	<result name="error">home.jsp</result>
+
+</action>
+

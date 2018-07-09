@@ -1,0 +1,8 @@
+INDEX VERSION 1.3+C:\Users\lookr\Desktop\workspace\ECƒTƒCƒg‰‹‰\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+170748814.index
+167806270.index
+2150458918.index
+1353687122.index
+625268364.index
+4170188757.index
+3091329530.index
