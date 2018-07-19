@@ -13,20 +13,7 @@ public class LoginDAO {
 	private Connection connection = dbConnector.getConnection();
 	private LoginDTO loginDTO = new LoginDTO();
 	public LoginDTO getLoginUserInfo(String loginUserId, String loginPassword) {
-		String sql =
-				"SELECT"
-				+ "ubit.id, iit.item_name, ubit.total_price, ubit.total_count,"
-				+ "ubit.pay, ubit.insert_date"
-				+ "FROM"
-				+ "user_buy_item_transaction ubit"
-				+ "LEFT JOIN"
-				+ "item_info_transaction iit"
-				+ "ON"
-				+ "ubit.item_transaction_id = iit.id"
-				+ "WHERE"
-				+ "ubit.item_transaction_id = ? AND ubit.user_master_id = ?"
-				+ "ORDER BY"
-				+ "insert_date DESC";
+		String sql = "SELECT * FROM login_user_transaction where login_id = ? AND login_pass = ?";
 
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);

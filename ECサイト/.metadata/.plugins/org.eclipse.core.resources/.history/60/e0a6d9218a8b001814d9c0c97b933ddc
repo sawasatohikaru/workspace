@@ -1,0 +1,31 @@
+
+package com.internousdev.ecsite.action;
+
+import java.sql.SQLException;
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class BuyItemCompleteAction extends ActionSupport implements SessionAware{
+
+	public Map<String,Object> session;
+
+	public String execute() throws SQLException {
+
+
+		String result = SUCCESS;
+
+
+		// 削除メソッド
+		System.out.println(session.get("login_user_id"));
+
+		return result;
+	}
+
+	@Override
+	public void setSession(Map<String, Object> session) {
+		this.session = session;
+	}
+}
